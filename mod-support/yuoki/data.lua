@@ -1,0 +1,13 @@
+return
+{
+	"prototypes.angel-conversions",
+	"prototypes.angel-smelting-categories",
+	"prototypes.angel-smelting-items",
+	"prototypes.angel-smelting-durotal",
+	"prototypes.angel-smelting-hmetal",
+	"prototypes.angel-smelting-nuatreel",
+	"prototypes.angel-smelting-orangestuff",
+	"prototypes.angel-smelting-technology",
+	"prototypes.circuit-conversions",
+	"prototypes.water-generator-pure",
+}

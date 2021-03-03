@@ -1,0 +1,9 @@
+return
+{
+	"fixes.gem-swap",
+	"fixes.module-fixes",
+	"fixes.no-reactor-upgrade",
+	"fixes.refining-ratios",
+	"fixes.sorting-multiplier",
+	"fixes.sorting-speeds",
+}

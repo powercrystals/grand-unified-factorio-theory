@@ -1,0 +1,14 @@
+return
+{
+	"prototypes.angel-petro-additions",
+	"prototypes.angel-refining-additions",
+	"prototypes.chrome",
+	"prototypes.clay",
+	"prototypes.fluorite",
+	"prototypes.limestone",
+	"prototypes.manganese",
+	"prototypes.platinum",
+	"prototypes.salt",
+	"prototypes.sand",
+	"prototypes.soil",
+}

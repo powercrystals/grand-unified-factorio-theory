@@ -1,0 +1,9 @@
+return
+{
+	"updates.farm-modules",
+	"updates.mastercraft-fast-replace-groups",
+	"updates.ore-updates",
+	"updates.sprite-fixes",
+	"updates.trade-updates",
+	"updates.train-updates",
+}

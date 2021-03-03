@@ -1,0 +1,52 @@
+-- undo angel's increase in refining cost if yuoki is present (as it breaks ratios)
+if data.raw["item"]["y-res1"] and data.raw["recipe"]["angelsore1-chunk-processing"] then
+	guftlib.recipe.input_set_quantity("angelsore1-chunk-processing", "angels-ore1-chunk", 6)
+	guftlib.recipe.input_set_quantity("angelsore3-chunk-processing", "angels-ore3-chunk", 6)
+	guftlib.recipe.input_set_quantity("angelsore1-crystal-processing", "angels-ore1-crystal", 8)
+	guftlib.recipe.input_set_quantity("angelsore3-crystal-processing", "angels-ore3-crystal", 8)
+	guftlib.recipe.input_set_quantity("angelsore1-pure-processing", "angels-ore1-pure", 9)
+	guftlib.recipe.input_set_quantity("angelsore3-pure-processing", "angels-ore3-pure", 9)
+end
+
+-- update refining recipes to make the ratios nicer
+guftlib.recipe.energy_set("angelsore1-chunk", 1)
+guftlib.recipe.energy_set("angelsore2-chunk", 1)
+guftlib.recipe.energy_set("angelsore3-chunk", 1)
+guftlib.recipe.energy_set("angelsore4-chunk", 1)
+guftlib.recipe.energy_set("angelsore5-chunk", 1)
+guftlib.recipe.energy_set("angelsore6-chunk", 1)
+
+guftlib.recipe.energy_set("angelsore1-chunk-processing", 1)
+guftlib.recipe.energy_set("angelsore2-chunk-processing", 1)
+guftlib.recipe.energy_set("angelsore3-chunk-processing", 1)
+guftlib.recipe.energy_set("angelsore4-chunk-processing", 1)
+guftlib.recipe.energy_set("angelsore5-chunk-processing", 1)
+guftlib.recipe.energy_set("angelsore6-chunk-processing", 1)
+
+guftlib.recipe.energy_set("angelsore1-crystal-processing", 1)
+guftlib.recipe.energy_set("angelsore2-crystal-processing", 1)
+guftlib.recipe.energy_set("angelsore3-crystal-processing", 1)
+guftlib.recipe.energy_set("angelsore4-crystal-processing", 1)
+guftlib.recipe.energy_set("angelsore5-crystal-processing", 1)
+guftlib.recipe.energy_set("angelsore6-crystal-processing", 1)
+
+guftlib.recipe.energy_set("angelsore1-crystal", 1)
+guftlib.recipe.energy_set("angelsore2-crystal", 1)
+guftlib.recipe.energy_set("angelsore3-crystal", 1)
+guftlib.recipe.energy_set("angelsore4-crystal", 1)
+guftlib.recipe.energy_set("angelsore5-crystal", 1)
+guftlib.recipe.energy_set("angelsore6-crystal", 1)
+
+guftlib.recipe.energy_set("angelsore1-pure-processing", 1)
+guftlib.recipe.energy_set("angelsore2-pure-processing", 1)
+guftlib.recipe.energy_set("angelsore3-pure-processing", 1)
+guftlib.recipe.energy_set("angelsore4-pure-processing", 1)
+guftlib.recipe.energy_set("angelsore5-pure-processing", 1)
+guftlib.recipe.energy_set("angelsore6-pure-processing", 1)
+
+guftlib.recipe.input_set_quantity("angelsore1-pure-processing", "angels-ore1-pure", 10)
+guftlib.recipe.input_set_quantity("angelsore2-pure-processing", "angels-ore2-pure", 10)
+guftlib.recipe.input_set_quantity("angelsore3-pure-processing", "angels-ore3-pure", 10)
+guftlib.recipe.input_set_quantity("angelsore4-pure-processing", "angels-ore4-pure", 10)
+guftlib.recipe.input_set_quantity("angelsore5-pure-processing", "angels-ore5-pure", 10)
+guftlib.recipe.input_set_quantity("angelsore6-pure-processing", "angels-ore6-pure", 10)

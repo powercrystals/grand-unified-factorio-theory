@@ -1,0 +1,4 @@
+return
+{
+	"updates.equipment-balance"
+}

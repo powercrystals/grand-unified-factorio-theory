@@ -1,0 +1,4 @@
+return
+{
+	"prototypes.alienloot-upgrades",
+}

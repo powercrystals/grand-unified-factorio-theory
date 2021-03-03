@@ -1,0 +1,9 @@
+return
+{
+	"prototypes.angel-smelting-categories",
+	"prototypes.angel-smelting-industrial-steel",
+	"prototypes.angel-smelting-items",
+	"prototypes.angel-smelting-technology",
+	"prototypes.lithium",
+	"prototypes.lithium-conversions",
+}
