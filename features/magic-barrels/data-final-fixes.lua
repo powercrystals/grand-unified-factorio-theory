@@ -1,25 +1,30 @@
 local contentlist = require("lib.contentlist")
 local featuredata = contentlist.execute_feature_data("magic-barrels")
 -- expected:
--- table of "barrels" (value of name of empty barrel-like-item names)
+-- table of "barrels" (value of name of empty barrel-like-items)
+-- table of "barrels_always" (key is filled barrel, value is empty barrel; these do not care about the "shape" of the recipe and will always remove the empty when the filled is on the other side)
 -- table of "exceptions" (value of name of recipe to not affect, for recipes that actually produce the empty barrel or use it as an intermediate)
 
 local barrel_items = {}
+local barrel_always = {}
 local recipe_execptions = {}
 
 if settings.startup["guft-feature-magic-barrels"].value then
 	for _, mod in pairs(featuredata) do
-		for _, barrel in pairs(mod.barrels) do
+		for _, barrel in pairs(mod.barrels or {}) do
 			barrel_items[barrel] = true
 		end
-		for _, recipe in pairs(mod.exceptions) do
+		for filled, empty in pairs(mod.barrels_always or {}) do
+			barrel_always[filled] = empty
+		end
+		for _, recipe in pairs(mod.exceptions or {}) do
 			recipe_execptions[recipe] = true
 		end
 	end
 
 	for _, recipe in pairs(data.raw.recipe) do
 		if not recipe_execptions[recipe.name] then
-			-- we only care if this "looks like" a barreling recipe or unbarreling recipe
+			-- for "barrel_items", we only care if this "looks like" a barreling recipe or unbarreling recipe
 			-- barreling recipe: exactly two ingredients, one of which is [empty barrel]
 			-- unbarreling recipe: same, results instead of ingredients
 
@@ -73,6 +78,16 @@ if settings.startup["guft-feature-magic-barrels"].value then
 				if match then
 					guftlib.recipe.output_remove(recipe, barrel)
 					break
+				end
+			end
+
+			-- for "barrel_always" it's much simpler: if there's a filled input and an empty output, remove the empty output; if there's an empty input and a filled output, remove the empty input
+			for filled, empty in pairs(barrel_always) do
+				if guftlib.recipe.input_contains(recipe, filled) and guftlib.recipe.output_contains(recipe, empty) then
+					guftlib.recipe.output_remove(recipe, empty)
+				end
+				if guftlib.recipe.input_contains(recipe, empty) and guftlib.recipe.output_contains(recipe, filled) then
+					guftlib.recipe.input_remove(recipe, empty)
 				end
 			end
 		end

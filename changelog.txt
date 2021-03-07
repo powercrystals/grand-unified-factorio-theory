@@ -1,0 +1,11 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2021-03-06
+  Initial release:
+    - Initial release
+
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2021-03-06
+  Bugfixes:
+    - Fix Magic Barrels for Angel's catalyst carriers. Also now supports MadClown01's Violet Metal Catalyst.

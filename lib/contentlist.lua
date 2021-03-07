@@ -164,7 +164,7 @@ contentlist.mods =
 	),
 	declare_mod("clown",
 		{ data = true, fixes = true },
-		{ "crushing", "decomposition", "fast-replace", "ore-control", "unicomp", }
+		{ "crushing", "decomposition", "fast-replace", "magic-barrels", "ore-control", "unicomp", }
 	),
 	declare_mod("hovercraft",
 		nil,

@@ -1,6 +1,46 @@
 local recipe = {}
 local debug = require("lib.debug")
 
+function recipe.input_contains(recipe, item)
+	if type(recipe) == "string" then
+		recipe = data.raw.recipe[recipe]
+	end
+
+	if type(item) == "string" then
+		item = data.raw.item[item] or data.raw.fluid[item]
+	end
+
+	if not recipe or not item then
+		return
+	end
+
+	if recipe.ingredients then
+		for index, ingredient in pairs(recipe.ingredients) do
+			if ingredient.name == item.name or ingredient[1] == item.name then
+				return true
+			end
+		end
+	end
+
+	if recipe.normal and recipe.normal.ingredients then
+		for index, ingredient in pairs(recipe.normal.ingredients) do
+			if ingredient.name == item.name or ingredient[1] == item.name then
+				return true
+			end
+		end
+	end
+
+	if recipe.expensive and recipe.expensive.ingredients then
+		for index, ingredient in pairs(recipe.expensive.ingredients) do
+			if ingredient.name == item.name or ingredient[1] == item.name then
+				return true
+			end
+		end
+	end
+
+	return false
+end
+
 function recipe.input_add(recipe, item, type, quantity)
 	if type(recipe) == "string" then
 		recipe = data.raw.recipe[recipe]
@@ -103,6 +143,46 @@ function recipe.input_set_quantity(recipe, item, quantity)
 			end
 		end
 	end
+end
+
+function recipe.output_contains(recipe, item)
+	if type(recipe) == "string" then
+		recipe = data.raw.recipe[recipe]
+	end
+
+	if type(item) == "string" then
+		item = data.raw.item[item] or data.raw.fluid[item]
+	end
+
+	if not recipe or not item then
+		return
+	end
+
+	if recipe.results then
+		for index, result in pairs(recipe.results) do
+			if result.name == item.name or result[1] == item.name then
+				return true
+			end
+		end
+	end
+
+	if recipe.normal and recipe.normal.results then
+		for index, result in pairs(recipe.normal.results) do
+			if result.name == item.name or result[1] == item.name then
+				return true
+			end
+		end
+	end
+
+	if recipe.expensive and recipe.expensive.results then
+		for index, result in pairs(recipe.expensive.results) do
+			if result.name == item.name or result[1] == item.name then
+				return true
+			end
+		end
+	end
+
+	return false
 end
 
 function recipe.output_remove(recipe, item)
