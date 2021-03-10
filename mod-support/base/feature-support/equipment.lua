@@ -13,7 +13,7 @@ local featuredata =
 
 		{ type = "movement-bonus-equipment", name = "exoskeleton-equipment", chassis = { "player" }, engines = { "powered" } },
 
-		{ type = "roboport-equipment", name = "personal-roboport-equipment", chassis = { "player" }, roles = { "cargo", "support"} },
+		{ type = "roboport-equipment", name = "personal-roboport-equipment", chassis = { "player" } },
 		{ type = "roboport-equipment", name = "personal-roboport-mk2-equipment", chassis = { "player" }, roles = { "cargo", "support"}, minimum_tier = 2 },
 
 		{ type = "night-vision-equipment", name = "night-vision-equipment", chassis = { "player" } },
