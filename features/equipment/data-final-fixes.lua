@@ -33,6 +33,7 @@ if settings.startup["guft-feature-equipment"].value then
 
 	local used_grids = { }
 	local used_categories = { }
+	local used_maximum_tiers = { }
 
 	local function tier_name(engine, role, chassis, tier)
 		return engine .. "-" .. role .. "-" .. chassis .. "-" .. tostring(tier)
@@ -93,6 +94,10 @@ if settings.startup["guft-feature-equipment"].value then
 			if not used_grids[grid_name] then
 				used_grids[grid_name] = { engine = engine, role = role, chassis = chassis, tier = tier }
 			end
+			
+			if not used_maximum_tiers[chassis] or used_maximum_tiers[chassis] < tier then
+				used_maximum_tiers[chassis] = tier
+			end
 		end
 
 		-- AAI creates vehicles named e.g. "vehiclename-gunname"
@@ -122,6 +127,10 @@ if settings.startup["guft-feature-equipment"].value then
 			if not used_grids[grid_name] then
 				used_grids[grid_name] = { engine = engine, role = role, chassis = chassis, tier = tier }
 			end
+			
+			if not used_maximum_tiers[chassis] or used_maximum_tiers[chassis] < tier then
+				used_maximum_tiers[chassis] = tier
+			end
 		end
 	end
 
@@ -134,6 +143,9 @@ if settings.startup["guft-feature-equipment"].value then
 				for _, role in pairs(roles or type_role) do
 					for _, chassis in pairs(chassises or type_chassis) do
 						for tier = (minimum_tier or 1), maximum_tier do
+							if used_maximum_tiers[chassis] and tier > used_maximum_tiers[chassis] then
+								tier = used_maximum_tiers[chassis]
+							end
 							local category = tier_name(engine, role, chassis, tier)
 				
 							if used_grids[category] then
