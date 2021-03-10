@@ -44,7 +44,7 @@ The mod support allows you to combine equipment in potentially unusual ways, suc
 
 There are also two additional toggles: One for how to handle Angel's equipment, as it is significantly more powerful than most other mods (as-is, rebalanced, or disabled entirely), and one allowing you to place player equipment in vehicles in case you don't have a mod providing vehicle-specific equipment.
 
-Supported mods: 248k - Accumulator Wagon - Aircraft - Angel's mods - Automatic Train Painter - Base game - Bob's mods - Cargo Ships - Hovercraft - Nuclear Locomotive - Power Armor mk3 - Pyanodon's mods - Yuoki Industries
+Supported mods: 248k - Accumulator Wagon - Aircraft - Angel's mods - Automatic Train Painter - Base game - Bob's mods - Cargo Ships - Hovercraft - Jetpack - Nuclear Locomotive - Power Armor mk3 - Pyanodon's mods - Yuoki Industries
 
 ### Fast Replace Corrections
 

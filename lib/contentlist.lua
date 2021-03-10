@@ -174,6 +174,10 @@ contentlist.mods =
 		nil,
 		{ "ore-control", }
 	),
+	declare_mod("jetpack",
+		nil,
+		{ "equipment", }
+	),
 	declare_mod("loader-redux",
 		nil,
 		{ "belt-speeds", }
