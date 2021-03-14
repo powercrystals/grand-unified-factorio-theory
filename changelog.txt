@@ -16,3 +16,9 @@ Date: 2021-03-09
   Equipment Overhaul:
     - Equipment category assignment will try to avoid equipment requiring a higher tier than any armor/vehicle can provide for that chassis by restricting the minimum tier to the highest tier seen
     - Support for the Jetpack mod
+
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 2021-03-14
+  Mod-Specific:
+    - Fixed Yuoki train speed normalization didn't apply to locomotives unless the "Enable chemical fuel in Yuoki locomotives" setting was enabled (it now always applies, as was the case for wagons already)

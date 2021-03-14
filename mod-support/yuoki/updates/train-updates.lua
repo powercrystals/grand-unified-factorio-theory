@@ -32,9 +32,9 @@ local function set_yuoki_train_tier(name, tier)
 		data.raw["fluid-wagon"][name].max_speed = tier_max_speeds[tier]
 	end
 
-	if data.raw["locomotive"][name] and settings.startup["guft-misc-yuoki-trains-chemical-fuel"].value then
+	if data.raw["locomotive"][name] then
 		data.raw["locomotive"][name].max_speed = tier_max_speeds[tier]
-		if data.raw["locomotive"][name].burner then
+		if settings.startup["guft-misc-yuoki-trains-chemical-fuel"].value and data.raw["locomotive"][name].burner then
 			if data.raw["locomotive"][name].burner.fuel_category then
 				data.raw["locomotive"][name].burner.fuel_categories = { data.raw["locomotive"][name].burner.fuel_category }
 				data.raw["locomotive"][name].burner.fuel_category = nil
