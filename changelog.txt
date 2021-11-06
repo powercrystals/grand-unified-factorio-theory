@@ -22,3 +22,10 @@ Version: 1.0.3
 Date: 2021-03-14
   Mod-Specific:
     - Fixed Yuoki train speed normalization didn't apply to locomotives unless the "Enable chemical fuel in Yuoki locomotives" setting was enabled (it now always applies, as was the case for wagons already)
+
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 2021-11-06
+  Bugfixes:
+    - Fixed broken recipes caused by Angel changing recipe categories
+    - Fixed references to icons previously saved as explicit icons in Angel that are now calculated

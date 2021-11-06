@@ -4,7 +4,7 @@ if mods["angelssmelting"] and mods["Yuoki"] then
 		{
 			type = "recipe",
 			name = "crushing-nuatreel",
-			category = "ore-sorting-t1",
+			category = "ore-sorting",
 			subgroup = "yuoki-crushing",
 			energy_required = 1,
 			ingredients =
@@ -15,7 +15,7 @@ if mods["angelssmelting"] and mods["Yuoki"] then
 			{
 				{type="item", name="y-crush-yres2", amount=2},
 				{type = "item", name = "stone-crushed", amount = 1}
-			}, 
+			},
 			icon = "__Yuoki__/graphics/icons/dust-green.png",
 			icon_size = 32,
 			order = "c[nuatreel]",

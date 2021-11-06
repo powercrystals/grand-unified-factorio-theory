@@ -17,7 +17,7 @@ function builder.icon_create_overlay(item_original, overlays)
 end
 
 function builder.build_ore_crushing_recipe(ore, subgroup)
-	if not data.raw.item[ore] or not data.raw["recipe-category"]["ore-sorting-t1"] then
+	if not data.raw.item[ore] or not data.raw["recipe-category"]["ore-sorting"] then
 		return
 	end
 
@@ -39,7 +39,7 @@ function builder.build_ore_crushing_recipe(ore, subgroup)
 		{
 			type = "recipe",
 			name = "crushing-" .. ore,
-			category = "ore-sorting-t1",
+			category = "ore-sorting",
 			subgroup = subgroup,
 			energy_required = 1,
 			ingredients =
@@ -59,7 +59,7 @@ function builder.build_ore_crushing_recipe(ore, subgroup)
 end
 
 function builder.build_gem_crushing_recipe(gem, subgroup)
-	if not data.raw.item[gem] or not data.raw["recipe-category"]["ore-sorting-t1"] then
+	if not data.raw.item[gem] or not data.raw["recipe-category"]["ore-sorting"] then
 		return
 	end
 
@@ -81,7 +81,7 @@ function builder.build_gem_crushing_recipe(gem, subgroup)
 		{
 			type = "recipe",
 			name = "crushing-" .. gem,
-			category = "ore-sorting-t1",
+			category = "ore-sorting",
 			subgroup = subgroup,
 			energy_required = 1,
 			ingredients =
