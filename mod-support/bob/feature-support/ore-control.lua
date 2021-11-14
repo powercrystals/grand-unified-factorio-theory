@@ -1,58 +1,58 @@
 local ores =
 {
-	["bauxite-ore"] = 
+	["bauxite-ore"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 2,
 	},
-	["cobalt-ore"] = 
+	["cobalt-ore"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 4,
 	},
-	["gem-ore"] = 
+	["gem-ore"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 5,
 	},
-	["gold-ore"] = 
+	["gold-ore"] =
 	{
 		guft_tier = 4,
 		guft_rarity = 5,
 	},
-	["lead-ore"] = 
+	["lead-ore"] =
 	{
 		guft_tier = 1,
 		guft_rarity = 2,
 		guft_start = true,
 	},
-	["nickel-ore"] = 
+	["nickel-ore"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 3,
 	},
-	["quartz"] = 
+	["quartz"] =
 	{
 		guft_tier = 1,
 		guft_rarity = 2,
 		guft_start = true,
 	},
-	["rutile-ore"] = 
+	["rutile-ore"] =
 	{
 		guft_tier = 4,
 		guft_rarity = 2,
 	},
-	["silver-ore"] = 
+	["silver-ore"] =
 	{
 		guft_tier = 4,
 		guft_rarity = 5,
-	},	
-	["sulfur"] = 
+	},
+	["sulfur"] =
 	{
 		guft_tier = 2,
 		guft_rarity = 3,
 	},
-	["thorium-ore"] = 
+	["thorium-ore"] =
 	{
 		guft_tier = 5,
 		guft_rarity = 5,
@@ -61,24 +61,24 @@ local ores =
 		random_spot_size_minimum = 2,
 		random_spot_size_maximum = 4,
 	},
-	["tin-ore"] = 
+	["tin-ore"] =
 	{
 		guft_tier = 1,
 		guft_rarity = 2,
 		guft_start = true,
 	},
-	["tungsten-ore"] = 
+	["tungsten-ore"] =
 	{
 		guft_tier = 5,
 		guft_rarity = 3,
 	},
-	["zinc-ore"] = 
+	["zinc-ore"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 4,
 	},
 
-	["ground-water"] = 
+	["ground-water"] =
 	{
 		guft_tier = 2,
 		guft_rarity = 4,
@@ -89,7 +89,7 @@ local ores =
 		random_spot_size_maximum = 1,
 		additional_richness = 220000,
 	},
-	["lithia-water"] = 
+	["lithia-water"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 5,
@@ -116,7 +116,7 @@ if not settings.startup["guft-enableores-bob"].value then
 	ores["tin-ore"].guft_enabled = false
 	ores["tungsten-ore"].guft_enabled = false
 	ores["zinc-ore"].guft_enabled = false
-	
+
 	ores["ground-water"].guft_enabled = false
 	ores["lithia-water"].guft_enabled = false
 end

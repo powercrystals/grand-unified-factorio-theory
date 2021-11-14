@@ -55,7 +55,7 @@ local ores =
 		additional_richness = 10000,
 		richness_post_multiplier = 0.03
 	},
-	
+
 	-- GUFT ores
 	["chrome-ore"] =
 	{

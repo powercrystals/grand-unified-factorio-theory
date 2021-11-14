@@ -29,3 +29,10 @@ Date: 2021-11-06
   Bugfixes:
     - Fixed broken recipes caused by Angel changing recipe categories
     - Fixed references to icons previously saved as explicit icons in Angel that are now calculated
+
+---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 2021-11-14
+  Bugfixes:
+    - Removed Angel's/248k industrial steel smelting integration as it appears 248k removed industrial steel at some point
+    - Fixed crash on load if Py's ores were disabled

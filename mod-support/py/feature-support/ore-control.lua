@@ -1,6 +1,6 @@
 local ores =
 {
-	["ore-aluminium"] = 
+	["ore-aluminium"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 3,
@@ -10,7 +10,7 @@ local ores =
 		random_spot_size_maximum = 4,
 		candidate_spot_count = 20
 	},
-	["ore-bioreserve"] = 
+	["ore-bioreserve"] =
 	{
 		guft_tier = 2,
 		guft_rarity = 4,
@@ -20,7 +20,7 @@ local ores =
 		random_spot_size_maximum = 4,
 		candidate_spot_count = 20
 	},
-	["borax"] = 
+	["borax"] =
 	{
 		guft_tier = 2,
 		guft_rarity = 3,
@@ -30,7 +30,7 @@ local ores =
 		random_spot_size_maximum = 4,
 		candidate_spot_count = 20
 	},
-	["ore-chromium"] = 
+	["ore-chromium"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 3,
@@ -40,7 +40,7 @@ local ores =
 		random_spot_size_maximum = 4,
 		candidate_spot_count = 20
 	},
-	["ore-lead"] = 
+	["ore-lead"] =
 	{
 		guft_tier = 1,
 		guft_rarity = 2,
@@ -51,7 +51,7 @@ local ores =
 		random_spot_size_maximum = 4,
 		candidate_spot_count = 20
 	},
-	["molybdenum-ore"] = 
+	["molybdenum-ore"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 4,
@@ -61,7 +61,7 @@ local ores =
 		random_spot_size_maximum = 4,
 		candidate_spot_count = 20
 	},
-	["ore-nickel"] = 
+	["ore-nickel"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 3,
@@ -70,7 +70,7 @@ local ores =
 		random_spot_size_maximum = 4,
 		candidate_spot_count = 20
 	},
-	["niobium"] = 
+	["niobium"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 3,
@@ -80,18 +80,18 @@ local ores =
 		random_spot_size_maximum = 4,
 		candidate_spot_count = 20
 	},
-	["ore-quartz"] = 
+	["ore-quartz"] =
 	{
 		guft_tier = 1,
 		guft_rarity = 2,
 		guft_start = true,
-	
+
 		base_spots_per_km2 = 1.25,
 		random_spot_size_minimum = 2,
 		random_spot_size_maximum = 4,
 		candidate_spot_count = 20
 	},
-	["rare-earth-bolide"] = 
+	["rare-earth-bolide"] =
 	{
 		guft_tier = 4,
 		guft_rarity = 4,
@@ -102,7 +102,7 @@ local ores =
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	["raw-coal"] = 
+	["raw-coal"] =
 	{
 		guft_tier = 1,
 		guft_rarity = 1,
@@ -114,7 +114,7 @@ local ores =
 		additional_richness = 10000,
 		candidate_spot_count = 20
 	},
-	["regolites"] = 
+	["regolites"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 4,
@@ -125,7 +125,7 @@ local ores =
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	["sulfur-patch"] = 
+	["sulfur-patch"] =
 	{
 		guft_tier = 2,
 		guft_rarity = 2,
@@ -136,7 +136,7 @@ local ores =
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	["ore-tin"] = 
+	["ore-tin"] =
 	{
 		guft_tier = 2,
 		guft_rarity = 3,
@@ -147,7 +147,7 @@ local ores =
 		random_spot_size_maximum = 4,
 		candidate_spot_count = 20
 	},
-	["ore-titanium"] = 
+	["ore-titanium"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 4,
@@ -157,7 +157,7 @@ local ores =
 		random_spot_size_maximum = 4,
 		candidate_spot_count = 20
 	},
-	["ore-zinc"] = 
+	["ore-zinc"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 3,
@@ -167,8 +167,8 @@ local ores =
 		random_spot_size_maximum = 4,
 		candidate_spot_count = 20
 	},
-	
-	["aluminium-rock"] = 
+
+	["aluminium-rock"] =
 	{
 		guft_tier = 4,
 		guft_rarity = 5,
@@ -179,7 +179,7 @@ local ores =
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	["chromium-rock"] = 
+	["chromium-rock"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 3,
@@ -190,18 +190,7 @@ local ores =
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	["coal-rock"] = 
-	{
-		guft_tier = 2,
-		guft_rarity = 4,
-	
-		base_spots_per_km2 = 1.25,
-		random_probability = 1 / 192,
-		random_spot_size_minimum = 1,
-		random_spot_size_maximum = 2,
-		additional_richness = 10000,
-	},
-	["copper-rock"] = 
+	["coal-rock"] =
 	{
 		guft_tier = 2,
 		guft_rarity = 4,
@@ -212,18 +201,29 @@ local ores =
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	["iron-rock"] = 
+	["copper-rock"] =
 	{
 		guft_tier = 2,
 		guft_rarity = 4,
-	
+
 		base_spots_per_km2 = 1.25,
 		random_probability = 1 / 192,
 		random_spot_size_minimum = 1,
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	["lead-rock"] = 
+	["iron-rock"] =
+	{
+		guft_tier = 2,
+		guft_rarity = 4,
+
+		base_spots_per_km2 = 1.25,
+		random_probability = 1 / 192,
+		random_spot_size_minimum = 1,
+		random_spot_size_maximum = 2,
+		additional_richness = 10000,
+	},
+	["lead-rock"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 4,
@@ -234,7 +234,7 @@ local ores =
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	["nexelit-rock"] = 
+	["nexelit-rock"] =
 	{
 		guft_tier = 4,
 		guft_rarity = 5,
@@ -245,7 +245,7 @@ local ores =
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	["nickel-rock"] = 
+	["nickel-rock"] =
 	{
 		guft_tier = 4,
 		guft_rarity = 5,
@@ -256,7 +256,7 @@ local ores =
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	["phosphate-rock"] = 
+	["phosphate-rock"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 3,
@@ -267,7 +267,7 @@ local ores =
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	["phosphate-rock-02"] = 
+	["phosphate-rock-02"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 3,
@@ -278,7 +278,7 @@ local ores =
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	["quartz-rock"] = 
+	["quartz-rock"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 4,
@@ -289,7 +289,7 @@ local ores =
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	["salt-rock"] = 
+	["salt-rock"] =
 	{
 		guft_tier = 2,
 		guft_rarity = 2,
@@ -300,7 +300,7 @@ local ores =
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	["tin-rock"] = 
+	["tin-rock"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 4,
@@ -311,7 +311,7 @@ local ores =
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	["titanium-rock"] = 
+	["titanium-rock"] =
 	{
 		guft_tier = 4,
 		guft_rarity = 5,
@@ -322,7 +322,7 @@ local ores =
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	["uranium-rock"] = 
+	["uranium-rock"] =
 	{
 		guft_tier = 4,
 		guft_rarity = 5,
@@ -333,7 +333,7 @@ local ores =
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	["zinc-rock"] = 
+	["zinc-rock"] =
 	{
 		guft_tier = 4,
 		guft_rarity = 5,
@@ -344,19 +344,19 @@ local ores =
 		random_spot_size_maximum = 2,
 		additional_richness = 10000,
 	},
-	
-	["bitumen-seep"] = 
+
+	["bitumen-seep"] =
 	{
 		guft_tier = 2,
 		guft_rarity = 2,
-	
+
 		base_spots_per_km2 = 1.8,
 		random_probability = 1/192,
 		random_spot_size_minimum = 1,
 		random_spot_size_maximum = 1,
 	},
-	
-	["volcanic-pipe"] = 
+
+	["volcanic-pipe"] =
 	{
 		guft_tier = 4,
 		guft_rarity = 4,
@@ -368,31 +368,31 @@ local ores =
 		additional_richness = 10000,
 	},
 
-	["oil-sand"] = 
+	["oil-sand"] =
 	{
 		guft_tier = 2,
 		guft_rarity = 4,
 	},
 
 	-- the following are no longer spawned by py as of some relatively recent version, so they just start disabled
-	["tar-patch"] = 
+	["tar-patch"] =
 	{
 		guft_enabled = false,
 	},
-	
-	["oil-mk01"] = 
+
+	["oil-mk01"] =
 	{
 		guft_enabled = false,
 	},
-	["oil-mk02"] = 
+	["oil-mk02"] =
 	{
 		guft_enabled = false,
 	},
-	["oil-mk03"] = 
+	["oil-mk03"] =
 	{
 		guft_enabled = false,
 	},
-	["oil-mk04"] = 
+	["oil-mk04"] =
 	{
 		guft_enabled = false,
 	},
@@ -404,7 +404,7 @@ if not settings.startup["guft-enableores-py"].value then
 	ores["borax"].guft_enabled = false
 	ores["ore-chromium"].guft_enabled = false
 	ores["ore-lead"].guft_enabled = false
-	ores["molybdenum-ore"] = false
+	ores["molybdenum-ore"].guft_enabled = false
 	ores["ore-nickel"].guft_enabled = false
 	ores["nickel-rock"].guft_enabled = false
 	ores["niobium"].guft_enabled = false
@@ -416,7 +416,7 @@ if not settings.startup["guft-enableores-py"].value then
 	ores["ore-tin"].guft_enabled = false
 	ores["ore-titanium"].guft_enabled = false
 	ores["ore-zinc"].guft_enabled = false
-	
+
 	ores["aluminium-rock"].guft_enabled = false
 	ores["chromium-rock"].guft_enabled = false
 	ores["coal-rock"].guft_enabled = false
@@ -432,17 +432,17 @@ if not settings.startup["guft-enableores-py"].value then
 	ores["titanium-rock"].guft_enabled = false
 	ores["uranium-rock"].guft_enabled = false
 	ores["zinc-rock"].guft_enabled = false
-	
+
 	ores["bitumen-seep"].guft_enabled = false
-	
+
 	ores["oil-sand"].guft_enabled = false
 	ores["tar-patch"].guft_enabled = false
-	
-	ores["oil-mk01"].guft_enabled = false	
+
+	ores["oil-mk01"].guft_enabled = false
 	ores["oil-mk02"].guft_enabled = false
 	ores["oil-mk03"].guft_enabled = false
 	ores["oil-mk04"].guft_enabled = false
-	
+
 	ores["volcanic-pipe"].guft_enabled = false
 end
 
