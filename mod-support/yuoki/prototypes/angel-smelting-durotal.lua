@@ -4,7 +4,7 @@ if mods["angelssmelting"] and mods["Yuoki"] then
 		{
 			type = "recipe",
 			name = "crushing-durotal",
-			category = "ore-sorting",
+			category = "ore-refining-t1",
 			subgroup = "yuoki-crushing",
 			energy_required = 1,
 			ingredients =

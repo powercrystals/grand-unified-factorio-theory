@@ -36,3 +36,9 @@ Date: 2021-11-14
   Bugfixes:
     - Removed Angel's/248k industrial steel smelting integration as it appears 248k removed industrial steel at some point
     - Fixed crash on load if Py's ores were disabled
+
+---------------------------------------------------------------------------------------------------
+Version: 1.0.6
+Date: 2021-11-15
+  Bugfixes:
+    - Re-fixed recipes affected by Angel's recipe category changes so crusing recipes are no longer in the ore sorter (sorry!)

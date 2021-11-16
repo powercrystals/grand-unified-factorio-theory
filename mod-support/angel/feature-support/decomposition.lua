@@ -2,13 +2,13 @@ return
 {
 	categories =
 	{
-		["ore-sorting"] = false,
-		["ore-sorting-t1"] = false,
-		["ore-sorting-t1-5"] = false,
-		["ore-sorting-t2"] = false,
-		["ore-sorting-t3"] = false,
-		["ore-sorting-t3-5"] = false,
-		["ore-sorting-t4"] = false,
+		["ore-refining"] = false,
+		["ore-refining-t1"] = false,
+		["ore-refining-t1-5"] = false,
+		["ore-refining-t2"] = false,
+		["ore-refining-t3"] = false,
+		["ore-refining-t3-5"] = false,
+		["ore-refining-t4"] = false,
 		["filtering"] = false,
 		["crystalizing"] = false,
 	},
