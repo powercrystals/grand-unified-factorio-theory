@@ -5,7 +5,9 @@ local featuredata =
 		{ type = "generator-equipment", name = "el_train_equipment_generator_item", chassis = { "train" } },
 		{ type = "generator-equipment", name = "fi_train_equipment_generator_item", chassis = { "train" }, minimum_tier = 4 },
 		{ type = "generator-equipment", name = "fi_equipment_player_reactor_item", chassis = { "player" }, minimum_tier = 3 },
+		{ type = "energy-shield-equipment", name = "fi_equipment_player_shield_item", chassis = { "player" }, minimum_tier = 3 },
 		{ type = "movement-bonus-equipment", name = "el_train_equipment_accelerator_item", chassis = { "train" }, engines = { "powered" } },
+		{ type = "active-defense-equipment", name = "gr_materials_charge_item", roles = { "combat" } },
 	},
 	armors =
 	{
