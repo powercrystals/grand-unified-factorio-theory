@@ -42,3 +42,14 @@ Version: 1.0.6
 Date: 2021-11-15
   Bugfixes:
     - Re-fixed recipes affected by Angel's recipe category changes so crusing recipes are no longer in the ore sorter (sorry!)
+
+---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+Date: 2021-11-21
+  Equipment Overhaul:
+    - Added missing equipment from Bob's Equipment and 248k
+    - Added support for Railway Motor Car
+  Ore Spawn Overhaul:
+    - Fixed ice ore so it's actually controlled by GUFT
+  Bugfixes:
+    - Fixed attempt to update Yuoki canned meat stargate trade recipe so it produces Bob logistic (pink) science presence if Bob's Technology mod is also present (this was always the intent, it just didn't work before)

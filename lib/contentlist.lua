@@ -202,6 +202,10 @@ contentlist.mods =
 		nil,
 		{ "equipment", "ore-control", }
 	),
+	declare_mod("railway-motor-car",
+		nil,
+		{ "equipment", }
+	),
 	declare_mod("schall",
 		{ data = true },
 		nil
