@@ -7,7 +7,7 @@ function recipe.input_contains(recipe, item)
 	end
 
 	if type(item) == "string" then
-		item = data.raw.item[item] or data.raw.fluid[item]
+		item = data.raw.item[item] or data.raw.fluid[item] or data.raw.tool[item]
 	end
 
 	if not recipe or not item then
@@ -47,7 +47,7 @@ function recipe.input_add(recipe, item, type, quantity)
 	end
 
 	if type(item) == "string" then
-		item = data.raw.item[item] or data.raw.fluid[item]
+		item = data.raw.item[item] or data.raw.fluid[item] or data.raw.tool[item]
 	end
 
 	if not recipe or not item then
@@ -75,7 +75,7 @@ function recipe.input_remove(recipe, item)
 	end
 
 	if type(item) == "string" then
-		item = data.raw.item[item] or data.raw.fluid[item]
+		item = data.raw.item[item] or data.raw.fluid[item] or data.raw.tool[item]
 	end
 
 	if not recipe or not item then
@@ -113,7 +113,7 @@ function recipe.input_set_quantity(recipe, item, quantity)
 	end
 
 	if type(item) == "string" then
-		item = data.raw.item[item] or data.raw.fluid[item]
+		item = data.raw.item[item] or data.raw.fluid[item] or data.raw.tool[item]
 	end
 
 	if not recipe or not item then
@@ -151,7 +151,7 @@ function recipe.output_contains(recipe, item)
 	end
 
 	if type(item) == "string" then
-		item = data.raw.item[item] or data.raw.fluid[item]
+		item = data.raw.item[item] or data.raw.fluid[item] or data.raw.tool[item]
 	end
 
 	if not recipe or not item then
@@ -191,7 +191,7 @@ function recipe.output_remove(recipe, item)
 	end
 
 	if type(item) == "string" then
-		item = data.raw.item[item] or data.raw.fluid[item]
+		item = data.raw.item[item] or data.raw.fluid[item] or data.raw.tool[item]
 	end
 
 	if not recipe or not item then
@@ -229,7 +229,7 @@ function recipe.output_set_quantity(recipe, item, quantity)
 	end
 
 	if type(item) == "string" then
-		item = data.raw.item[item] or data.raw.fluid[item]
+		item = data.raw.item[item] or data.raw.fluid[item] or data.raw.tool[item]
 	end
 
 	if not recipe or not item then
@@ -267,11 +267,11 @@ function recipe.item_replace(recipe, item_old, item_new)
 	end
 
 	if type(item_old) == "string" then
-		item_old = data.raw.item[item_old] or data.raw.fluid[item_old]
+		item_old = data.raw.item[item_old] or data.raw.fluid[item_old] or data.raw.tool[item_old]
 	end
 
 	if type(item_new) == "string" then
-		item_new = data.raw.item[item_new] or data.raw.fluid[item_new]
+		item_new = data.raw.item[item_new] or data.raw.fluid[item_new] or data.raw.tool[item_new]
 	end
 
 	if not recipe or not item_old or not item_new then

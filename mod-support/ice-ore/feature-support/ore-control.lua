@@ -1,6 +1,6 @@
 local ores =
 {
-	["ice_ore"] =
+	["ice-ore"] =
 	{
 		guft_tier = 1,
 		guft_rarity = 4,

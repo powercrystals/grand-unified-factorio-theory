@@ -3,7 +3,7 @@ guftlib.recipe.output_set_quantity("ye_fish3_recipe", "ye_fish3", 20)
 guftlib.recipe.output_set_quantity("ye_fish2_recipe", "ye_fish2", 5)
 guftlib.recipe.output_set_quantity("ye_buechse_white_recipe", "ye_buechse_white", 6)
 
-if data.raw.item["advanced-logistic-science-pack"] then
+if data.raw.tool["advanced-logistic-science-pack"] then
 	guftlib.recipe.item_replace("ye_buechse_fleisch_export_recipe", "production-science-pack", "advanced-logistic-science-pack")
 end
 
