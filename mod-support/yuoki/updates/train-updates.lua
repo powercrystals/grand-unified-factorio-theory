@@ -111,9 +111,9 @@ set_yuoki_train_tier("y_loco_steam_wt450","")
 set_yuoki_train_tier("yir_loco_del_bluegray","diesel")
 
 -- Americans
-set_yuoki_train_tier("yir_wagon_caboose_cr","")
+set_yuoki_train_tier("yir_wagon_caboose_cr","future")
 set_yuoki_train_tier("yir_4a_container_cr","future")
-set_yuoki_train_tier("yir_4a_clean_cr","")
+set_yuoki_train_tier("yir_4a_clean_cr","future")
 set_yuoki_train_tier("yir_es44cr","diesel")
 set_yuoki_train_tier("yir_emdf7a_cr","diesel")
 set_yuoki_train_tier("yir_emdf7a_mn","diesel")
