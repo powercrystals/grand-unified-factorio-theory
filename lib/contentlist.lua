@@ -120,7 +120,7 @@ contentlist.mods =
 {
 	declare_mod("248k",
 		{ data = true, updates = true },
-		{ "equipment", "ore-control", "productivity", }
+		{ "crushing", "equipment", "ore-control", "productivity", }
 	),
 	declare_mod("aai",
 		{ updates = true },
