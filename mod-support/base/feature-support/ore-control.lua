@@ -1,6 +1,6 @@
 local ores =
 {
-	["iron-ore"] = 
+	["iron-ore"] =
 	{
 		guft_tier = 1,
 		guft_rarity = 1,
@@ -8,7 +8,7 @@ local ores =
 
 		candidate_spot_count = 22,
 	},
-	["copper-ore"] = 
+	["copper-ore"] =
 	{
 		guft_tier = 1,
 		guft_rarity = 2,
@@ -16,19 +16,19 @@ local ores =
 
 		candidate_spot_count = 22
 	},
-	["coal"] = 
+	["coal"] =
 	{
 		guft_tier = 1,
 		guft_rarity = 1,
 		guft_start = true,
 	},
-	["stone"] = 
+	["stone"] =
 	{
 		guft_tier = 1,
 		guft_rarity = 3,
 		guft_start = true,
 	},
-	["uranium-ore"] = 
+	["uranium-ore"] =
 	{
 		guft_tier = 4,
 		guft_rarity = 4,
@@ -37,7 +37,7 @@ local ores =
 		random_spot_size_minimum = 2,
 		random_spot_size_maximum = 4,
 	},
-	["crude-oil"] = 
+	["crude-oil"] =
 	{
 		guft_tier = 3,
 		guft_rarity = 3,
@@ -58,6 +58,7 @@ end
 if settings.startup["guft-enableores-base-preset"].value == "py" then
 	ores["uranium-ore"].guft_enabled = false
 	ores["crude-oil"].guft_enabled = false
+	ores["coal"].guft_enabled = false
 end
 
 if not settings.startup["guft-enableores-base"].value then
