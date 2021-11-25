@@ -48,6 +48,10 @@ local function set_yuoki_train_tier(name, tier)
 				table.insert(data.raw["locomotive"][name].burner.fuel_categories, "chemical")
 			end
 		end
+
+		if data.raw["locomotive"][name .. "-mu"] then
+			set_yuoki_train_tier(name .. "-mu", tier)
+		end
 	end
 end
 
