@@ -6,6 +6,9 @@ local featuredata =
 		["temperate-farming"] = 0.1,
 		["desert-farming"] = 0.1,
 		["swamp-farming"] = 0.1,
+		["advanced-temperate-farming"] = 0.1,
+		["advanced-desert-farming"] = 0.1,
+		["advanced-swamp-farming"] = 0.1,
 
 		["bio-refugium-puffer"] = 0.2,
 		["bio-refugium-fish"] = 0.2,
@@ -20,8 +23,11 @@ local featuredata =
 		["bio-hatchery"] = 0.2,
 		["bio-butchery"] = 1/15,
 		["bio-processor"] = 0.5,
-		["bio-processing"] = 0.5,
 		["bio-pressing"] = 0.25,
+		["bio-processing"] = 0.5,
+		["bio-processing-2"] = 0.5,
+		["bio-processing-3"] = 0.5,
+		["bio-processing-4"] = 0.5,
 
 		["nutrient-extractor"] = 0.5,
 		["angels-arboretum"] = 0.2,
