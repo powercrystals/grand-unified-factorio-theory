@@ -53,3 +53,21 @@ Date: 2021-11-21
     - Fixed ice ore so it's actually controlled by GUFT
   Bugfixes:
     - Fixed attempt to update Yuoki canned meat stargate trade recipe so it produces Bob logistic (pink) science presence if Bob's Technology mod is also present (this was always the intent, it just didn't work before)
+
+---------------------------------------------------------------------------------------------------
+Version: 1.0.8
+Date: 2021-11-28
+  New Feature: Wagon Speed Normalization
+    - Sets all wagons to a relatively high maximum speed (1080kph) so train speed is entirely controlled by locomotive
+    - This allows you to, for example, attach Yuoki "steam" wagons to an Angel tier 5 smelting locomotive and have the train run at max speed
+    - If an existing wagon is somehow faster than this value, its max speed will be unchanged
+    - At this time this is always enabled as it shouldn't make anything worse by being active
+  Ore Crushing:
+    - Now supports 248k ores and 248k pure ores
+  Mod-Specific:
+    - Setting "Py" vanilla ore preset disables vanilla coal (in favor of Py raw coal)
+    - Adjusted tier of some Yuoki trains for increased consistency
+  Bugfixes:
+    - Various changes applied to Angel's mods based on recipe category now respect the newer higher-tier versions of those categories (primarily this affects sorters and algae farms)
+    - Updates to Yuoki locomotive fuel consumption (etc.) now affect Multiple Unit Train Control duplicate locomotives
+    - Fixed broken/missing info icons in settings tooltips

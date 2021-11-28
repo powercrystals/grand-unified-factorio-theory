@@ -114,6 +114,9 @@ contentlist.features =
 	declare_content("unicomp",
 		{ updates = true }
 		),
+	declare_content("wagon-speeds",
+		{ updates = true }
+		),
 }
 
 contentlist.mods =

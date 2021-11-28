@@ -24,12 +24,10 @@ local function set_yuoki_train_tier(name, tier)
 
 	if data.raw["cargo-wagon"][name] then
 		data.raw["cargo-wagon"][name].inventory_size = tier_cargo_capacities[tier]
-		data.raw["cargo-wagon"][name].max_speed = tier_max_speeds[tier]
 	end
 
 	if data.raw["fluid-wagon"][name] then
 		data.raw["fluid-wagon"][name].capacity = tier_fluid_capacities[tier]
-		data.raw["fluid-wagon"][name].max_speed = tier_max_speeds[tier]
 	end
 
 	if data.raw["locomotive"][name] then
