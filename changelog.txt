@@ -57,7 +57,8 @@ Date: 2021-11-21
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.8
 Date: 2021-11-28
-  New Feature: Wagon Speed Normalization
+  Wagon Speed Normalization:
+    - New feature
     - Sets all wagons to a relatively high maximum speed (1080kph) so train speed is entirely controlled by locomotive
     - This allows you to, for example, attach Yuoki "steam" wagons to an Angel tier 5 smelting locomotive and have the train run at max speed
     - If an existing wagon is somehow faster than this value, its max speed will be unchanged
