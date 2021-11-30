@@ -44,7 +44,7 @@ The mod support allows you to combine equipment in potentially unusual ways, suc
 
 There are also two additional toggles: One for how to handle Angel's equipment, as it is significantly more powerful than most other mods (as-is, rebalanced, or disabled entirely), and one allowing you to place player equipment in vehicles in case you don't have a mod providing vehicle-specific equipment.
 
-Supported mods: 248k - Accumulator Wagon - Aircraft - Angel's mods - Automatic Train Painter - Base game - Bob's mods - Cargo Ships - Hovercraft - Jetpack - Nuclear Locomotive - Power Armor mk3 - Pyanodon's mods - Yuoki Industries
+Supported mods: 248k - Accumulator Wagon - Aircraft - Angel's mods - Automatic Train Painter - Base game - Bob's mods - Cargo Ships - Hovercraft - Jetpack - Nuclear Locomotive - Power Armor mk3 - Pyanodon's mods - Railway Motor Car - Yuoki Industries
 
 ### Fast Replace Corrections
 
@@ -78,7 +78,7 @@ If playing with Angel's mods, it is possible to wind up in a situation where a p
 
 This feature cannot be disabled, and requires Angel's Refining installed to function.
 
-Supported mods: Angel's mods - Base game - Bob's mods - MadClown01's mods - Yuoki Industries
+Supported mods: 248k - Angel's mods - Base game - Bob's mods - MadClown01's mods - Yuoki Industries
 
 ### Ore Spawn Logic Replacement
 
@@ -92,6 +92,7 @@ And, GUFT **also** adds optional resources for the following ores that normally 
 * 248k's Lithium ore
 * Angel's Chrome, Manganese, and Platinum ores
 * Angel's Clay, Salt, Sand, and Soil resources
+* Angel's Fluorite resource
 * Cargo Ships deep sea versions of Angel's Gas Well and Fissure resources
 * MadClown01's Osmium, Magnesium, and Phosphorus
 
@@ -148,6 +149,10 @@ Again, as the name says. This is for if you enable Omnimatter and other ores as 
 ### Enable Chemical Fuel in Yuoki Locomotives
 
 Enables using chemical fuel (the default, coal/wood/etc.) in Yuoki Diesel- and Future-era trains.
+
+### Wagon Speed Normalization
+
+Sets all train wagons (cargo, fluid, and artillery) to a maximum speed of 1080kph if they would otherwise be less than that. This allows you to mix and match locomotives and wagons with only the locomotive determining the train's maximum speed.
 
 ### Infinite Ores
 
