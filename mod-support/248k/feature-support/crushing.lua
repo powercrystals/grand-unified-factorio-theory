@@ -4,6 +4,7 @@ return
 	{
 		"el_aluminum_ore_item",
 		"el_lithium_ore_item",
+		"el_energy_crystal_item",
 
 		"fu_lead_ore_item",
 
