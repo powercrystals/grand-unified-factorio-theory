@@ -162,7 +162,7 @@ contentlist.mods =
 		{ "belt-speeds", "bio-speed-changes", "crushing", "decomposition", "equipment", "fast-replace", "magic-barrels", "miner-area", "ore-control", "radar-range", "unicomp", }
 	),
 	declare_mod("cargo-ships", 
-		{ data = true, control = true },
+		{ updates = true, control = true },
 		{ "equipment", }
 	),
 	declare_mod("clown",

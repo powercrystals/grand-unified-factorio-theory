@@ -1,6 +1,6 @@
 {
 	"name": "grand-unified-factorio-theory",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"factorio_version": "1.1",
 	"title": "Grand Unified Factorio Theory",
 	"author": "power crystals",
@@ -23,7 +23,7 @@
 		"?bobores >= 1.1.0",
 		"?bobplates >= 1.1.2",
 		"?bobvehicleequipment >= 1.1.2",
-		"?cargo-ships >= 0.0.17",
+		"?cargo-ships >= 0.1.11",
 		"?Clowns-Extended-Minerals >= 1.1.20",
 		"?Clowns-Processing >= 1.3.14",
 		"?omnimatter >= 4.1.7",

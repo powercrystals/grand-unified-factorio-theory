@@ -14,7 +14,7 @@ if mods["cargo-ships"] and mods["angelspetrochem"] then
 		type = "recipe",
 		name = "gas_rig_from_oil_rig",
 		enabled = false,
-		ingredients = 
+		ingredients =
 		{
 			{"oil_rig", 1}
 		},
@@ -27,7 +27,7 @@ if mods["cargo-ships"] and mods["angelspetrochem"] then
 		type = "recipe",
 		name = "gas_rig_to_oil_rig",
 		enabled = false,
-		ingredients = 
+		ingredients =
 		{
 			{rig_item.name, 1}
 		},
@@ -35,7 +35,7 @@ if mods["cargo-ships"] and mods["angelspetrochem"] then
 		allow_decomposition = false,
 		result_count = 1
 	}
-	
+
 	data:extend({ rig, rig_power, rig_item, rig_from_oil_recipe, rig_to_oil_recipe })
 
 	table.insert(data.raw.technology["deep_sea_oil_extraction"].effects, { type = "unlock-recipe", recipe = rig_from_oil_recipe.name })
