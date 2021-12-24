@@ -78,3 +78,9 @@ Version: 1.0.9
 Date: 2021-12-23
   Bugfixes:
     - Fixed crash on load in certain conditions caused by Cargo Ships no longer registering certain entities if Omnimatter or Sea Block was also active
+
+---------------------------------------------------------------------------------------------------
+Version: 1.0.10
+Date: 2021-12-24
+  Bugfixes:
+    - Fixed crash on load if you didn't have Cargo Ships active (thanks Razunter!)

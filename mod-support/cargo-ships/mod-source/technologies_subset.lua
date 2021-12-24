@@ -1,3 +1,5 @@
+if mods["cargo-ships"] and not data.raw["technology"]["deep_sea_oil_extraction"] then
+
 local function unlock(recipe)
   return {
     type = "unlock-recipe",
@@ -27,3 +29,4 @@ end
       order = "c-g-b",
     },
   }
+end

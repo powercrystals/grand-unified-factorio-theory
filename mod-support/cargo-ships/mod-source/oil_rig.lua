@@ -1,3 +1,5 @@
+if mods["cargo-ships"] and not data.raw["mining-drill"]["oil_rig"] then
+
 local function oilrig_layer(orientation, animated)
   local returned_value = {
     layers = {
@@ -296,6 +298,5 @@ or_radar.energy_usage = "50kW"
 or_radar.water_reflection = nil
 or_radar.working_sound = nil
 
-if not data.raw["mining-drill"]["oil_rig"] then
-  data:extend{oil_rig, or_power, or_pole, or_radar}
+data:extend{oil_rig, or_power, or_pole, or_radar}
 end

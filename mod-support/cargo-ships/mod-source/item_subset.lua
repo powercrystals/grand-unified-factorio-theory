@@ -1,3 +1,4 @@
+if mods["cargo-ships"] and not data.raw["item"]["oil_rig"] then
   data:extend{
     {
       type = "item",
@@ -61,3 +62,4 @@
       stack_size = 1,
     },
   }
+end

@@ -1,3 +1,5 @@
+if mods["cargo-ships"] and not data.raw["resource"]["deep_oil"] then
+
 ----------------------------------------------------------------
 -------------------------DEEP SEA OIL --------------------------
 ----------------------------------------------------------------
@@ -49,9 +51,8 @@ deep_oil.stages = {
 }
 deep_oil.water_reflection = nil
 
-if not data.raw["resource"]["deep_oil"] then
-  data:extend{deep_oil}
+data:extend{deep_oil}
 
-  -- Make sure the oil rig can mine deep oil:
-  data.raw["mining-drill"]["oil_rig"].resource_categories = {data.raw.resource["deep_oil"].category}
+-- Make sure the oil rig can mine deep oil:
+data.raw["mining-drill"]["oil_rig"].resource_categories = {data.raw.resource["deep_oil"].category}
 end

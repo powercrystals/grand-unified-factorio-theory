@@ -1,3 +1,4 @@
+if mods["cargo-ships"] and not data.raw["recipe"]["oil_rig"] then
   data:extend{
     {
       type = "recipe",
@@ -15,3 +16,4 @@
       result_count = 1
     },
   }
+end
