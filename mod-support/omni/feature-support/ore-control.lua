@@ -13,8 +13,8 @@ local ores =
 }
 
 if not settings.startup["guft-enableores-omni"].value then
-	ores["omnite"] = false
-	ores["infinite-omnite"] = false
+	ores["omnite"].guft_enabled = false
+	ores["infinite-omnite"].guft_enabled = false
 end
 
 if settings.startup["guft-enableores-base"].value then

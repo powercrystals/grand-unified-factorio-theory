@@ -14,7 +14,7 @@ if guft.orebackup then
 	end
 
 	for name, ore in pairs(guft.orebackup.resources) do
-		if not data.raw["resource"][name].autoplace then
+		if data.raw["resource"][name] and not data.raw["resource"][name].autoplace then
 			data.raw["resource"][name].autoplace = ore
 		end
 	end

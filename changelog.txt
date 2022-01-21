@@ -84,3 +84,10 @@ Version: 1.0.10
 Date: 2021-12-24
   Bugfixes:
     - Fixed crash on load if you didn't have Cargo Ships active (thanks Razunter!)
+
+---------------------------------------------------------------------------------------------------
+Version: 1.0.11
+Date: 2022-01-21
+  Bugfixes:
+    - Fixed crash on load when using Offshore P.U.M.P.S. with Bob's mods (thanks Nuclearo!)
+    - Fixed crash on load when disabling omnite if it wasn't active (thanks Nuclearo again!)
