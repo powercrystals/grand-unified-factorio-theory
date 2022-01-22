@@ -91,3 +91,9 @@ Date: 2022-01-21
   Bugfixes:
     - Fixed crash on load when using Offshore P.U.M.P.S. with Bob's mods (thanks Nuclearo!)
     - Fixed crash on load when disabling omnite if it wasn't active (thanks Nuclearo again!)
+
+---------------------------------------------------------------------------------------------------
+Version: 1.0.12
+Date: 2022-01-22
+  Bugfixes:
+    - Fixed crash on load when using Angel's Bio without Bob's modules (thanks Fox536!)
