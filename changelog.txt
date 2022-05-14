@@ -101,5 +101,10 @@ Date: 2022-01-22
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.13
 Date: 2022-05-14
+  Lab Unifier:
+    - New feature
+    - Copies all possible inputs from the base game lab to any specified mod labs
+    - For now this only covers the Bob "Lab 2"
+    - This will cover things like 248k's science items that are otherwise only usable in base labs
   Bugfixes:
     - Fixed crash when placing Offshore Gas Rigs (thanks Quintuple5!)

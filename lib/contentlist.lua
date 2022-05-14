@@ -96,6 +96,9 @@ contentlist.features =
 	declare_content("hand-craft-filter",
 		{ fixes = true }
 	),
+	declare_content("lab-unifier",
+		{ fixes = true }
+	),
 	declare_content("magic-barrels",
 		{ fixes = true }
 	),
@@ -159,7 +162,7 @@ contentlist.mods =
 	),
 	declare_mod("bob",
 		{ data = true, updates = true },
-		{ "belt-speeds", "bio-speed-changes", "crushing", "decomposition", "equipment", "fast-replace", "magic-barrels", "miner-area", "ore-control", "radar-range", "unicomp", }
+		{ "belt-speeds", "bio-speed-changes", "crushing", "decomposition", "equipment", "fast-replace", "lab-unifier", "magic-barrels", "miner-area", "ore-control", "radar-range", "unicomp", }
 	),
 	declare_mod("cargo-ships", 
 		{ updates = true, control = true },
