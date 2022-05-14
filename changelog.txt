@@ -97,3 +97,9 @@ Version: 1.0.12
 Date: 2022-01-22
   Bugfixes:
     - Fixed crash on load when using Angel's Bio without Bob's modules (thanks Fox536!)
+
+---------------------------------------------------------------------------------------------------
+Version: 1.0.13
+Date: 2022-05-14
+  Bugfixes:
+    - Fixed crash when placing Offshore Gas Rigs (thanks Quintuple5!)

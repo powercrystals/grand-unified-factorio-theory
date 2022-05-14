@@ -17,10 +17,6 @@ function on_gas_rig_entity_built(e)
 		table.insert(global.or_generators,or_power)
 		ent.surface.create_entity{name = "or_pole", position = pos, force = ent.force}
 		ent.surface.create_entity{name = "or_radar", position = pos, force = ent.force}
-		ent.surface.create_entity{name = "or_lamp", position = {pos.x - 3, pos.y -3}, force = ent.force}
-		ent.surface.create_entity{name = "or_lamp", position = {pos.x + 2, pos.y -3}, force = ent.force}
-		ent.surface.create_entity{name = "or_lamp", position = {pos.x + 2, pos.y + 3}, force = ent.force}
-		ent.surface.create_entity{name = "or_lamp", position = {pos.x - 3, pos.y + 3}, force = ent.force}
 		return
 	end
 end
