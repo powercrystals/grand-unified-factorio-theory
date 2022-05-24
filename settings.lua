@@ -88,7 +88,7 @@ data:extend(
 		default_value = true,
 		order = "a[modores]-yuoki",
 	},
-	
+
 	{
 		type = "bool-setting",
 		name = "guft-newores-248k",
@@ -172,7 +172,7 @@ data:extend(
 		allowed_values = { "very-poor", "poor", "regular", "good", "very-good" },
 		order = "b[newores]-cargoships-fissure-richness"
 	},
-	
+
 	{
 		type = "bool-setting",
 		name = "guft-feature-belt-speeds",
@@ -300,7 +300,7 @@ data:extend(
 		allowed_values = {0.5, 1, 2, 3, 4},
 		order = "d[balance]-angel-ore-sort-multiplier",
 	},
-	
+
 	{
 		type = "bool-setting",
 		name = "guft-misc-fragile-burners",
@@ -329,7 +329,14 @@ data:extend(
 		default_value = false,
 		order = "e[misc]-yuoki-trains-chemical-fuel",
 	},
-		
+	{
+		type = "bool-setting",
+		name = "guft-misc-angel-basic-smelting",
+		setting_type = "startup",
+		default_value = false,
+		order = "e[misc]-angel-basic-smelting",
+	},
+
 	{
 		type = "bool-setting",
 		name = "guft-mores-enable",

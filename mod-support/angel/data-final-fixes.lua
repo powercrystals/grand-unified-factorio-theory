@@ -1,5 +1,6 @@
 return
 {
+	"fixes.enable-basic-smelting",
 	"fixes.gem-swap",
 	"fixes.module-fixes",
 	"fixes.no-reactor-upgrade",

@@ -108,3 +108,11 @@ Date: 2022-05-14
     - This will cover things like 248k's science items that are otherwise only usable in base labs
   Bugfixes:
     - Fixed crash when placing Offshore Gas Rigs (thanks Quintuple5!)
+
+---------------------------------------------------------------------------------------------------
+Version: 1.0.15
+Date: 2022-05-24
+  Equipment Overhaul:
+    - Added support for Faster Start
+  Mod-Specific:
+    - New "Basic Angel's Smelting" setting that re-enables putting Iron, Copper, Lead, and Tin directly in furnaces
