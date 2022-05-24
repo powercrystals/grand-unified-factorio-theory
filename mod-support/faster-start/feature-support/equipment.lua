@@ -6,6 +6,6 @@ return
 	},
 	armors =
 	{
-		{ name = "mini-power-armor", role = "support", tier = 1 },
+		{ name = "mini-power-armor", role = "support", tier = 2 },
 	}
 }
