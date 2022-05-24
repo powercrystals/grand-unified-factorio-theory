@@ -172,6 +172,10 @@ contentlist.mods =
 		{ data = true, fixes = true },
 		{ "crushing", "decomposition", "fast-replace", "magic-barrels", "ore-control", "unicomp", }
 	),
+	declare_mod("faster-start",
+		nil,
+		{ "equipment", }
+	),
 	declare_mod("hovercraft",
 		nil,
 		{ "equipment", }
