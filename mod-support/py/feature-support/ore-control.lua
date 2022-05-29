@@ -44,7 +44,6 @@ local ores =
 	{
 		guft_tier = 1,
 		guft_rarity = 2,
-		guft_start = true,
 
 		base_spots_per_km2 = 1.25,
 		random_spot_size_minimum = 2,
@@ -84,7 +83,6 @@ local ores =
 	{
 		guft_tier = 1,
 		guft_rarity = 2,
-		guft_start = true,
 
 		base_spots_per_km2 = 1.25,
 		random_spot_size_minimum = 2,
@@ -106,7 +104,6 @@ local ores =
 	{
 		guft_tier = 1,
 		guft_rarity = 1,
-		guft_start = true,
 
 		base_spots_per_km2 = 1.25,
 		random_spot_size_minimum = 2,
@@ -140,7 +137,6 @@ local ores =
 	{
 		guft_tier = 2,
 		guft_rarity = 3,
-		guft_start = true,
 
 		base_spots_per_km2 = 1.25,
 		random_spot_size_minimum = 2,
@@ -444,6 +440,13 @@ if not settings.startup["guft-enableores-py"].value then
 	ores["oil-mk04"].guft_enabled = false
 
 	ores["volcanic-pipe"].guft_enabled = false
+end
+
+if settings.startup["guft-feature-ore-control-start-py"].value then
+	ores["ore-lead"].guft_start = true
+	ores["ore-quartz"].guft_start = true
+	ores["raw-coal"].guft_start = true
+	ores["ore-tin"].guft_start = true
 end
 
 return ores

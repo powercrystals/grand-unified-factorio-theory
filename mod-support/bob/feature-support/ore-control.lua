@@ -24,7 +24,6 @@ local ores =
 	{
 		guft_tier = 1,
 		guft_rarity = 2,
-		guft_start = true,
 	},
 	["nickel-ore"] =
 	{
@@ -35,7 +34,6 @@ local ores =
 	{
 		guft_tier = 1,
 		guft_rarity = 2,
-		guft_start = true,
 	},
 	["rutile-ore"] =
 	{
@@ -65,7 +63,6 @@ local ores =
 	{
 		guft_tier = 1,
 		guft_rarity = 2,
-		guft_start = true,
 	},
 	["tungsten-ore"] =
 	{
@@ -123,6 +120,12 @@ end
 
 if not settings.startup["guft-enableores-bobsulfur"].value then
 	ores["sulfur"].guft_enabled = false
+end
+
+if settings.startup["guft-feature-ore-control-start-bob"].value then
+	ores["lead-ore"].guft_start = true
+	ores["quartz"].guft_start = true
+	ores["tin-ore"].guft_start = true
 end
 
 return ores

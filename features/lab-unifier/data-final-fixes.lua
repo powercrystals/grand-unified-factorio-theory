@@ -14,7 +14,6 @@ for modname, mod in pairs(featuredata) do
 				end
 
 				if not found then
-					log("Adding " .. input .. " to " .. labname .. " from " .. modname)
 					table.insert(modlab.inputs, input)
 				end
 			end

@@ -4,7 +4,6 @@ local ores =
 	{
 		guft_tier = 1,
 		guft_rarity = 1,
-		guft_start = true,
 
 		candidate_spot_count = 22,
 	},
@@ -12,7 +11,6 @@ local ores =
 	{
 		guft_tier = 1,
 		guft_rarity = 2,
-		guft_start = true,
 
 		candidate_spot_count = 22
 	},
@@ -20,13 +18,11 @@ local ores =
 	{
 		guft_tier = 1,
 		guft_rarity = 1,
-		guft_start = true,
 	},
 	["stone"] =
 	{
 		guft_tier = 1,
 		guft_rarity = 3,
-		guft_start = true,
 	},
 	["uranium-ore"] =
 	{
@@ -70,9 +66,17 @@ if not settings.startup["guft-enableores-base"].value then
 	ores["crude-oil"].guft_enabled = false
 end
 
-if settings.startup["guft-enableores-angel"].value and mods["angelsrefining"] then
-	ores["iron-ore"].guft_start = false
-	ores["copper-ore"].guft_start = false
+if settings.startup["guft-feature-ore-control-start-base-coal"].value then
+	ores["coal"].guft_start = true
+end
+
+if settings.startup["guft-feature-ore-control-start-base-stone"].value then
+	ores["stone"].guft_start = true
+end
+
+if settings.startup["guft-feature-ore-control-start-base-metals"].value then
+	ores["iron-ore"].guft_start = true
+	ores["copper-ore"].guft_start = true
 end
 
 return ores

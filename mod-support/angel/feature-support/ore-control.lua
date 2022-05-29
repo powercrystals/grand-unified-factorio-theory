@@ -118,7 +118,7 @@ if not settings.startup["guft-enableores-angelresource"].value then
 	ores["angels-fissure"].guft_enabled = false
 end
 
-if settings.startup["guft-enableores-angel"].value and (not settings.startup["guft-enableores-base-preset"].value ~= "angel" or not settings.startup["guft-enableores-bob"].value) then
+if settings.startup["guft-feature-ore-control-start-angel"].value then
 	ores["angels-ore1"].guft_start = true
 	ores["angels-ore3"].guft_start = true
 	ores["angels-ore5"].guft_start = true

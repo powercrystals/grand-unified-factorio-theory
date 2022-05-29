@@ -110,9 +110,15 @@ Date: 2022-05-14
     - Fixed crash when placing Offshore Gas Rigs (thanks Quintuple5!)
 
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.15
+Version: 1.0.14
 Date: 2022-05-24
   Equipment Overhaul:
     - Added support for Faster Start
   Mod-Specific:
     - New "Basic Angel's Smelting" setting that re-enables putting Iron, Copper, Lead, and Tin directly in furnaces
+
+---------------------------------------------------------------------------------------------------
+Version: 1.0.15
+Date: 2022-05-29
+  Ore Spawn Overhaul:
+    - Added new manual checkbox settings for which ores spawn in the starting area. Previously, GUFT attempted to automatically determine this based on enabled ore sets, but it didn't always do what was expected. This allows you to, for example, enable Angel's and Bob's ores both but only have Bob's ores in the starting area. Or, you could even disable all starting ores entirely to encourage exploration. This does not however make any attempt to address the base game's issues with starting ores failing to spawn, so it still does not guarantee those ores will actually be on any given seed.
