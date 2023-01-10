@@ -122,3 +122,9 @@ Version: 1.0.15
 Date: 2022-05-29
   Ore Spawn Overhaul:
     - Added new manual checkbox settings for which ores spawn in the starting area. Previously, GUFT attempted to automatically determine this based on enabled ore sets, but it didn't always do what was expected. This allows you to, for example, enable Angel's and Bob's ores both but only have Bob's ores in the starting area. Or, you could even disable all starting ores entirely to encourage exploration. This does not however make any attempt to address the base game's issues with starting ores failing to spawn, so it still does not guarantee those ores will actually be on any given seed.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.0.16
+Date: 2023-01-09
+  Bugfixes:
+    - Fixed crash on load when using Bob's mods due to a change to Bob's resource generation (thanks Sgamez!)

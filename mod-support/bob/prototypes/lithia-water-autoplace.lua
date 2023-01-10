@@ -1,5 +1,3 @@
-require("resource-autoplace")
-
 if data.raw["resource"]["lithia-water"] then
 	data:extend(
 	{
@@ -12,8 +10,7 @@ if data.raw["resource"]["lithia-water"] then
 		},
 	})
 
-	data.raw["resource"]["lithia-water"].autoplace =
-	resource_autoplace.resource_autoplace_settings(
+	data.raw["resource"]["lithia-water"].autoplace = bobmods.lib.resource_autoplace.resource_autoplace_settings(
 	{
 		name = "lithia-water",
 		order = "c",
